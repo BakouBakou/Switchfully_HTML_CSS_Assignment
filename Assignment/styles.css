@@ -1,0 +1,165 @@
+@font-face {
+	font-family: Quicksand;
+	src: url(fonts/Quicksand-Regular.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url(fonts/Quicksand-Italic.otf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url(fonts/Quicksand-Bold.otf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url(fonts/Quicksand-BoldItalic.otf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+
+	background-color: black;
+	color: white;
+
+	font-family: "Helvetica", "Arial", sans-serif;
+
+	margin: 20px; 
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-family: Quicksand, Verdana, Tahoma, sans-serif;
+	font-weight: normal;
+	font-size: 2.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #ccd483;	
+}
+
+a:hover {
+	color:  darkgrey;
+}
+
+.website-navigation {
+	display: flex;
+	justify-content: space-around;
+}
+
+.website-navigation a {
+	display: block;
+	font-size: 1.5em;
+}
+
+article p {
+	font-size: 1.3em;
+	text-align: justify;
+	margin: 10px 0;
+}
+
+.main-picture {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: block;
+	width: 80%;
+}
+
+.images-in-text {
+	height: 1em;
+	vertical-align: middle;
+}
+
+aside {
+	text-align: center;
+}
+
+aside p {
+	font-size: 0.5em;
+	margin: 10px 0;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin: 0 20px;
+}
+
+.social-network-logo {
+	height: 60px;
+}
+
+.video {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+@media only screen and (min-width:  501px) {
+	.align-blocks-row{
+		display: flex;
+		align-items: center;
+	}
+
+	.about-me-article {
+		margin-right: 20px;
+	}
+
+	.main-picture {
+		width: auto;
+	}
+
+	aside {
+		background-color: #878a74;
+		padding: 10px ;
+		border-radius: 50px;
+/*		border: 0px solid green;*/
+	}
+
+	li {
+		margin: 10px 0;
+	}
+
+	.video {
+		box-sizing: border-box;
+		width: 450px;
+		height: 253px;
+	}
+
+}
